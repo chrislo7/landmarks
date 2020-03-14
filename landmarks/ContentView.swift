@@ -10,19 +10,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("CN Tower")
-                .font(.title)
-            HStack {
-                Text("Toronto")
-                    .font(.subheadline)
-                Spacer()
-                Text("Canada")
-                    .font(.subheadline)
+        VStack {
+            VStack(alignment: .leading) {
+                Text("CN Tower")
+                    .font(.title)
+                HStack {
+                    Text("Toronto")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("Canada")
+                        .font(.subheadline)
+                }
             }
         }
     .padding()
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
